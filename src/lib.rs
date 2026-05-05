@@ -14,15 +14,16 @@ mod verde_chain {
     pub fn inicializar_proyecto(
         ctx: Context<CrearProyecto>, 
         nombre_proyecto: String,
-        monto_mxn: u64,
+        monto_mxn: u64, 
         es_efectivo: bool,
         hectareas_meta: u8,
     ) -> Result<()> {
         let proyecto = &mut ctx.accounts.proyecto;
 
         // --- FILTRO DE AUDITORÍA (Ley Antilavado / PLD) ---
-        // Se valida que el monto en efectivo no supere el límite legal de la LFPIORPI ($871,274 MXN).
-        if es_efectivo && monto_mxn > 871274 {
+        // Se valida que el monto en efectivo no supere el límite legal de la LFPIORPI ($871,274.00 MXN).
+        // Importante: El contrato maneja unidades en centavos (Fixed Point Arithmetic) para evitar errores de redondeo.
+        if es_efectivo && monto_mxn > 87127400 { 
             return err!(ErrorCode::ExcesoLimiteEfectivo);
         }
 
@@ -33,15 +34,12 @@ mod verde_chain {
         proyecto.es_efectivo = es_efectivo;
         proyecto.hectareas_meta = hectareas_meta;
         
-        // El NDVI (Índice de Vegetación) inicia en 0 (sin reporte de éxito aún).
         proyecto.ndvi_actual = 0; 
-        // El Escrow inicia bloqueado (false) para proteger el capital.
         proyecto.fondos_liberados = false;
 
-        msg!("C: Proyecto {} creado bajo cumplimiento normativo.", proyecto.nombre);
+        msg!("C: Proyecto {} creado bajo cumplimiento normativo (unidades en centavos).", proyecto.nombre);
         Ok(())
     }
-
     /// -------------------------------------------------------------------------
     /// 2. READ (OPERACIÓN 'R'): Verificar Auditoría
     /// Propósito: Consultar el estatus biológico y financiero actual del registro.
