@@ -8,8 +8,8 @@ Los proyectos de compensación de carbono suelen sufrir de **Greenwashing** (fal
 
 ## Solución
 Este Smart Contract en Solana automatiza la auditoría mediante dos filtros críticos:
-1. **Filtro PLD (Financiero):** Bloquea transacciones en efectivo que superen los límites de la ley mexicana ($871,274 MXN).
-2. **Hito Biológico (NDVI):** Los fondos del proyecto permanecen congelados y solo se liberan al proveedor si el índice NDVI (salud de vegetación) alcanza el 50%.
+1. **Filtro PLD (Financiero):** Filtro de Cumplimiento Normativo (PLD): Implementación de reglas de negocio basadas en la LFPIORPI (México) para la restricción de operaciones en efectivo. El contrato actúa como una aduana lógica que impide la inicialización de proyectos que no cumplan con los umbrales de debida diligencia..
+2. **Hito Biológico (NDVI):** LoLos fondos se mantienen en custodia (escrow) hasta que la métrica de salud vegetal alcance el umbral crítico definido (50% de la densidad óptima de 0.8 NDVI). Esto asegura la existencia real del activo biológico antes de la liquidación financiera.
 
 ## Tecnologías
 - **Lenguaje:** Rust
@@ -30,3 +30,10 @@ Para validar la lógica de cumplimiento del contrato, se pueden realizar las sig
 - **Paso B:** Ejecutar `actualizar_ndvi` con un valor de `20`. Los fondos seguirán bloqueados porque el mangle aún no está sano.
 - **Paso C:** Ejecutar `actualizar_ndvi` con un valor de `60`.
 - **Resultado esperado:** El contrato detectará que se superó el umbral de salud vegetal (50%) y cambiará automáticamente `fondosLiberados` a `true`. Esto garantiza que el proveedor solo cobre si hay éxito biológico real.
+
+## Futuras Iteraciones (Roadmap)
+- Descentralización de Oráculos: Integración con Chainlink para la ingesta automatizada de datos satelitales (eliminando la captura manual).
+
+- Identidad Digital (KYC): Incorporación de protocolos de Identidad Descentralizada (DID) como Civic para la identificación plena del Beneficiario Final.
+
+- Arquitectura Híbrida: Migración de almacenamiento de evidencias (fotos/reportes) a IPFS/Arweave para optimizar costos de almacenamiento en mainnet.
