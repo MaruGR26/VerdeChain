@@ -1,5 +1,5 @@
 # VerdeChain
-### Auditoría Ambiental y Financiera en la Blockchain de Solana
+### Infraestructura de cumplimiento automatizado para la mitigación de riesgos de Greenwashing y PLD en activos biológicos.
 
 VerdeChain es un protocolo de **Bio-Escrow** diseñado para garantizar la transparencia en proyectos de reforestación en la Riviera Maya, México. 
 
