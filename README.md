@@ -1,13 +1,10 @@
-# VerdeChain 🧬📊
+# VerdeChain 🌱📊
+### Infraestructura de cumplimiento automatizado para la mitigación de riesgos de Greenwashing y PLD en activos biológicos.
 
 ![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 ![Status: Prototype](https://img.shields.io/badge/Status-Prototype-green?style=for-the-badge)
-
-### Infraestructura de cumplimiento automatizado para la mitigación de riesgos de Greenwashing y PLD.
-# VerdeChain
-### Infraestructura de cumplimiento automatizado para la mitigación de riesgos de Greenwashing y PLD en activos biológicos.
 
 VerdeChain es un protocolo de **Bio-Escrow** diseñado para garantizar la transparencia en proyectos de reforestación en la Riviera Maya, México. 
 
