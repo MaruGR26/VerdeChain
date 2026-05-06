@@ -1,0 +1,9 @@
+[programs.devnet]
+verde_chain = "BMaCPqfQwxmhokknch2qykb189FhhfWupxf7uBuoMgx"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
