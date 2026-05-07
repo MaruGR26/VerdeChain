@@ -14,7 +14,7 @@ Los proyectos de compensación de carbono suelen sufrir de **Greenwashing** (fal
 ## Solución
 Este Smart Contract en Solana automatiza la auditoría mediante dos filtros críticos:
 1. **Filtro PLD (Financiero):** Filtro de Cumplimiento Normativo (PLD): Implementación de reglas de negocio basadas en la LFPIORPI (México) para la restricción de operaciones en efectivo. El contrato actúa como una aduana lógica que impide la inicialización de proyectos que no cumplan con los umbrales de debida diligencia..
-2. **Hito Biológico (NDVI):** LoLos fondos se mantienen en custodia (escrow) hasta que la métrica de salud vegetal alcance el umbral crítico definido (50% de la densidad óptima de 0.8 NDVI). Esto asegura la existencia real del activo biológico antes de la liquidación financiera.
+2. **Hito Biológico (NDVI):** Los fondos se mantienen en custodia (escrow) hasta que la métrica de salud vegetal alcance el umbral crítico definido (50% de la densidad óptima de 0.8 NDVI). Esto asegura la existencia real del activo biológico antes de la liquidación financiera.
 
 ## Tecnologías
 - **Lenguaje:** Rust
@@ -34,9 +34,9 @@ Para validar la lógica de cumplimiento del contrato, se pueden realizar las sig
 - **Paso A:** Crear un proyecto con datos válidos (ej. Monto: 100,000, Efectivo: false). Al consultar la cuenta, verás que `fondosLiberados` es `false`.
 - **Paso B:** Ejecutar `actualizar_ndvi` con un valor de `20`. Los fondos seguirán bloqueados porque el mangle aún no está sano.
 - **Paso C:** Ejecutar `actualizar_ndvi` con un valor de `60`.
-- **Resultado esperado:** El contrato detectará que se superó el umbral de salud vegetal (50%) y cambiará automáticamente `fondosLiberados` a `true`. Esto garantiza que el proveedor solo cobre si hay éxito biológico real.
+- **Resultado esperado:** El contrato detecta que se superó el umbral de salud vegetal (50%, es decir, NDVI 0.4, umbral de crecimiento vigoroso; el 0.8 representa madurez total de acuerdo a diversos autores para el caso de manglares) y cambiará automáticamente `fondosLiberados` a `true`. Esto garantiza que el proveedor solo cobre si hay éxito biológico real.
 
-## Futuras Iteraciones (Roadmap)
+## Futuras Iteraciones (Roadmap del escenario ideal)
 - Descentralización de Oráculos: Integración con Chainlink para la ingesta automatizada de datos satelitales (eliminando la captura manual).
 
 - Identidad Digital (KYC): Incorporación de protocolos de Identidad Descentralizada (DID) como Civic para la identificación plena del Beneficiario Final.
