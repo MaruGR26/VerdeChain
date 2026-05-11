@@ -48,6 +48,6 @@ Para validar la lógica de cumplimiento del contrato, se pueden realizar las sig
 - Arquitectura Híbrida: Migración de almacenamiento de evidencias (fotos/reportes) a IPFS/Arweave para optimizar costos de almacenamiento en mainnet.
 
   ## Referencias Bibliográficas 
-* Salmo, S. G., Lovelock, C. E. y Duke, N. C. (2013).** _Vegetation and soil characteristics as indicators of restoration trajectories in restored mangroves._ Hydrobiologia, 720(1), 1–18.
-* Sidik, F., Adame, M. F. y Lovelock, C. E. (2019).** _Carbon sequestration and fluxes of restored mangroves in abandoned aquaculture ponds._ Journal of the Indian Ocean Region, 15(2), 177–192.
-* Zuluaga, A. C. (2021).** _Dinámica del NDVI de los bosques de manglar de la Ciénaga Grande de Santa Marta (CGSM), Colombia._ Facultad de Agronomía, Universidad de Buenos Aires (FAUBA).
+* Salmo, S. G., Lovelock, C. E. y Duke, N. C. (2013). _Vegetation and soil characteristics as indicators of restoration trajectories in restored mangroves._ Hydrobiologia, 720(1), 1–18.
+* Sidik, F., Adame, M. F. y Lovelock, C. E. (2019). _Carbon sequestration and fluxes of restored mangroves in abandoned aquaculture ponds._ Journal of the Indian Ocean Region, 15(2), 177–192.
+* Zuluaga, A. C. (2021). _Dinámica del NDVI de los bosques de manglar de la Ciénaga Grande de Santa Marta (CGSM), Colombia._ Facultad de Agronomía, Universidad de Buenos Aires (FAUBA).
