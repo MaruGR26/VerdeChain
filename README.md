@@ -16,9 +16,9 @@ Este Smart Contract en Solana automatiza la auditoría mediante dos filtros crí
 1. **Filtro PLD (Financiero):** Filtro de Cumplimiento Normativo (PLD): Implementación de reglas de negocio basadas en la LFPIORPI (México) para la restricción de operaciones en efectivo. El contrato actúa como una aduana lógica que impide la inicialización de proyectos que no cumplan con los umbrales de debida diligencia..
 2. **Hito Biológico (Eco-Escrow con Ventana de 5 años):** Los fondos se mantienen en custodia (escrow) hasta que la métrica de salud vegetal alcance el umbral de 0.5 NDVI. La lógica de liberación se fundamenta en lo siguiente:
 
-### _Trayectoria de Crecimiento:_ Los manglares jóvenes (<8 años) presentan las tasas de crecimiento más dinámicas, permitiendo una detección clara de recuperación en los primeros 5 años (Salmo et al., 2013; Sidik et al., 2019).
+# _Trayectoria de Crecimiento:_ Los manglares jóvenes (<8 años) presentan las tasas de crecimiento más dinámicas, permitiendo una detección clara de recuperación en los primeros 5 años (Salmo et al., 2013; Sidik et al., 2019).
 
-### _Memoria Ambiental y Resiliencia:_ Se establece un periodo de validación de hasta 5 años debido al "efecto de retraso" (time-lag). Como se señala en el trabajo de Zuluaga (2021), el NDVI mínimo anual está condicionado por la salinidad y descarga hídrica de los 2 a 5 años anteriores. Esta ventana asegura que el ecosistema ha logrado establecerse frente a variables adversas por lo que se procede con la liquidación financiera.
+# _Memoria Ambiental y Resiliencia:_ Se establece un periodo de validación de hasta 5 años debido al "efecto de retraso" (time-lag). Como se señala en el trabajo de Zuluaga (2021), el NDVI mínimo anual está condicionado por la salinidad y descarga hídrica de los 2 a 5 años anteriores. Esta ventana asegura que el ecosistema ha logrado establecerse frente a variables adversas por lo que se procede con la liquidación financiera.
 
 ## Tecnologías
 - **Lenguaje:** Rust
